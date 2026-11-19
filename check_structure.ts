@@ -1,0 +1,1 @@
+console.table([...document.querySelectorAll('#productMenuSidebar a')].filter(e=>['Wiki','Home','Translation Processes','Design'].includes(e.textContent.trim())).map(e=>({texte:e.textContent.trim(),parent:e.parentElement?.parentElement?.className})));
